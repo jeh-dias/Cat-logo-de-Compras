@@ -4,28 +4,18 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="myApp">
     <head>
         <title>Categoria Two</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
         <script src="../controller/ctrl.js"></script>
         <script src="../vendor/json/products.json"></script>
     </head>
-    <body ng-app="myApp" ng-controller="recuperarJson">
-        <p class="title"><font size="8" face="sans-serif"><b>SPORTS</b></font></p>
-        <!--div class="container-fluid" ng-app="myApp">           
-            <div class="row" ng-controller="recuperarJson">
-                <div ng-repeat="cat in categoryTwo" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                    <img ng-src="{{cat.url}}" alt="{{cat.name}}" class="pull.rigth"/>
-                    <p class="name"><b>{{cat.app_name}}</b></p>
-                    <p class="price">{{cat.price}}</p>
-                </div>                
-            </div>
-        </div--> 
-        
+    <body ng-controller="recuperarJson">
+        <p class="title"><font size="5" face="sans-serif"><b>Categoria 2</b></font></p>        
         <iframe src="../view/header.html"></iframe>
         
         <table class="produto" ng-repeat="cat in categoryTwo">

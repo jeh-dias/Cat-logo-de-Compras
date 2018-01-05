@@ -9,8 +9,8 @@
           "price":"42,00",
           "app_name":"Electronic Example iOS",
           "category":"category two",
-          "description": "description exemplo",
-          "details" : "details exemplo"
+          "description": "description exemplo 1",
+          "details" : "details exemplo 1"
         },
         {
           "name": "iphone",
@@ -18,8 +18,8 @@
           "price":"43,00",
           "app_name":"Electronic Example iPhone",
           "category":"category two",
-          "description": "description exemplo",
-          "details" : "details exemplo"
+          "description": "description exemplo 2",
+          "details" : "details exemplo 2"
         },
         {
           "name":"ipad",
@@ -27,8 +27,8 @@
            "price":"44,00",
            "app_name":"Electronic Example iPad",
            "category":"category one",
-           "description": "description exemplo",
-           "details" : "details exemplo"
+           "description": "description exemplo 2",
+           "details" : "details exemplo 3"
         },
         {
           "name": "android",
@@ -37,8 +37,8 @@
           "price":"40,00",
           "app_name":"Electronic Example Android",
           "category":"category two",
-          "description": "description exemplo",
-          "details" : "details exemplo"
+          "description": "description exemplo 4",
+          "details" : "details exemplo 4"
         },
         {
           "name" : "windows_phone",
@@ -46,7 +46,7 @@
           "price":"78,88",
           "app_name":"Electronic Example Windows",
           "category":"category one",
-          "description": "description exemplo",
-          "details" : "details exemplo"
+          "description": "description exemplo 5",
+          "details" : "details exemplo 5"
         }
     ]

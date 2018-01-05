@@ -5,10 +5,10 @@
  */
 
 /* declaração de um módulo em angular js    */
-var myAppModule = angular.module('myApp', []);
+angular.module("myApp", []);
 
 /* declaração do controller e das suas dependências         */
-myAppModule.controller('recuperarJson', ['$scope','$http', function($scope, $http)
+angular.module("myApp").controller("recuperarJson", ['$scope','$http', function($scope, $http)
 {    
     $scope.products = [];
     $scope.categoryOne = [];
@@ -20,11 +20,11 @@ myAppModule.controller('recuperarJson', ['$scope','$http', function($scope, $htt
      * Após esta obtenção, foram criados dois filtros. Cada filtro é capaz de 
      * obter os produtos de uma categoria.
      */
-    $http.get('../vendor/json/products.json').success(function(data){
-        $scope.products = data;
+    $http.get('../vendor/json/products.json').success(function(response, status, headers, config){
+        $scope.products = response.data;
         
         angular.forEach($scope.products, function(value, key){
-            if(value.category == "category one"){
+            if(value.category === "category one"){
                 $scope.categoryOne.push(value);
             }else{
                 $scope.categoryTwo.push(value);
@@ -33,20 +33,13 @@ myAppModule.controller('recuperarJson', ['$scope','$http', function($scope, $htt
     });
     
     $scope.click = function(object){
-        console.log('url ' + object.url);
-        console.log('description ' + object.description);
-        console.log('details ' + object.details);
         $scope.recebe = object;
     }
     
     function test(){
-        console.log('entrouuus');
-        //var result = $scope.recebe; 
         return $scope.recebe.url;
-        //return $scope.recebe.nome;
     }
-    
-    
+       
 }]);
 
 
