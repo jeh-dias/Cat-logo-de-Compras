@@ -22,15 +22,15 @@ and open the template in the editor.
         
         <iframe src="../view/header.html"></iframe>
         
-        <table class="produto" ng-repeat="phone in phones">
+        <table class="produto" ng-repeat="product in products">
             <tr>
-                <td><a href="select_item.html" target="_blank" ng-click="click(phone)"><img ng-src="{{phone.url}}" alt="{{phone.name}}" /></a></td>
+                <td><a href="select_item.html" target="_blank" ng-click="click(product)"><img ng-src="{{product.url}}" alt="{{product.name}}" /></a></td>
             </tr>
             <tr>
-                <td><p class="name"><b>{{phone.app_name}}</b></p></td>
+                <td><p class="name"><b>{{product.app_name}}</b></p></td>
             </tr>
             <tr>
-                <td><p class="price">{{phone.price}}</p></td>
+                <td><p class="price">{{product.price}}</p></td>
             </tr>
         </table>
     </body>

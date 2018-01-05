@@ -1,3 +1,7 @@
+    /*                                     
+        Este arquivo foi criado com o objetivo de ser um repositório das imagens carregadas para o catálogo.
+        Sendo assim todas as imagens carregadas tem uma url correspondente e não estão estáticas no projeto.       
+    */
     [
         {
           "name": "ios", 

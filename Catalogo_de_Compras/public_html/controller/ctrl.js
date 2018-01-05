@@ -4,20 +4,26 @@
  * and open the template in the editor.
  */
 
-
-// declare a module
+/* declaração de um módulo em angular js    */
 var myAppModule = angular.module('myApp', []);
 
+/* declaração do controller e das suas dependências         */
 myAppModule.controller('recuperarJson', ['$scope','$http', function($scope, $http)
 {    
-    $scope.phones = [];
+    $scope.products = [];
     $scope.categoryOne = [];
     $scope.categoryTwo = [];
     $scope.recebe = null;
+    
+    /* O código abaixo é responsável por realizar uma requisição para obter todos os dados do 
+     * arquivo json presente no projeto.
+     * Após esta obtenção, foram criados dois filtros. Cada filtro é capaz de 
+     * obter os produtos de uma categoria.
+     */
     $http.get('../vendor/json/products.json').success(function(data){
-        $scope.phones = data;
+        $scope.products = data;
         
-        angular.forEach($scope.phones, function(value, key){
+        angular.forEach($scope.products, function(value, key){
             if(value.category == "category one"){
                 $scope.categoryOne.push(value);
             }else{
