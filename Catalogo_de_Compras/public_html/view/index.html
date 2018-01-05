@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Catálogo de Preços</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="../controller/ctrl.js"></script>
+        <script src="../vendor/json/products.json"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+    <body ng-app="myApp" ng-controller="recuperarJson">
+        <p class="title"><font size="8" face="sans-serif"><b>ALL PRODUCTS</b></font></p>  
+        
+        <iframe src="../view/header.html"></iframe>
+        
+        <table class="produto" ng-repeat="phone in phones">
+            <tr>
+                <td><a href="select_item.html" target="_blank" ng-click="click(phone)"><img ng-src="{{phone.url}}" alt="{{phone.name}}" /></a></td>
+            </tr>
+            <tr>
+                <td><p class="name"><b>{{phone.app_name}}</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="price">{{phone.price}}</p></td>
+            </tr>
+        </table>
+    </body>
+</html>

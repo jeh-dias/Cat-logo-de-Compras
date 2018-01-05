@@ -1,0 +1,48 @@
+    [
+        {
+          "name": "ios", 
+          "url":"https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-7777-large.jpg",
+          "price":"42,00",
+          "app_name":"Electronic Example iOS",
+          "category":"category two",
+          "description": "description exemplo",
+          "details" : "details exemplo"
+        },
+        {
+          "name": "iphone",
+          "url":"https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-6120-large.jpg",
+          "price":"43,00",
+          "app_name":"Electronic Example iPhone",
+          "category":"category two",
+          "description": "description exemplo",
+          "details" : "details exemplo"
+        },
+        {
+          "name":"ipad",
+          "url":"https://openui5.hana.ondemand.com/test-resources/sap/ui/demokit/explored/img/HT-6100-large.jpg",
+           "price":"44,00",
+           "app_name":"Electronic Example iPad",
+           "category":"category one",
+           "description": "description exemplo",
+           "details" : "details exemplo"
+        },
+        {
+          "name": "android",
+          "url":"https://codebeautify.org/excel-to-json/cb02bacc",
+          "package":"com.electronic",
+          "price":"40,00",
+          "app_name":"Electronic Example Android",
+          "category":"category two",
+          "description": "description exemplo",
+          "details" : "details exemplo"
+        },
+        {
+          "name" : "windows_phone",
+          "url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11950690_308991979224936_345640148_n.jpg",
+          "price":"78,88",
+          "app_name":"Electronic Example Windows",
+          "category":"category one",
+          "description": "description exemplo",
+          "details" : "details exemplo"
+        }
+    ]
